@@ -1,4 +1,5 @@
 from django.db.models import Count
+from django.db.models.functions import Lower
 from django.shortcuts import get_object_or_404
 from rest_framework import generics, status
 from mailing.models import Mailing
@@ -114,12 +115,18 @@ class MailingStatisticsView(generics.ListAPIView):
         queryset = self.get_queryset()
         data = []
         for mailing in queryset:
-            messages = Message.objects.filter(mailing=mailing)
-            statuses = messages.values_list('status', flat=True)
-            total_messages = messages.count()
+            messages = (
+                Message.objects
+                .filter(mailing=mailing)
+                .values('status')
+                .annotate(count=Count('status'))
+                .order_by(Lower('status'))
+            )
+            status_data = [{'status': message['status'], 'count': message['count']} for message in messages]
+            total_messages = sum(message['count'] for message in messages)
             data.append({
                 'mailing_id': mailing.id,
-                'statuses': list(statuses),
+                'status_data': status_data,
                 'total_messages': total_messages
             })
         return Response(data)
