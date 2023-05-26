@@ -56,7 +56,7 @@ DATABASES = {
 }
 
 'http://127.0.0.1:8000/client/<int:pk>/update/' # Изменить данные о клиенте 'PUT'
-# Method 'PUT' тело запроса:
+# Method 'PUT' тело запроса в ссылке указать id Клиента которого надо изменить:
 {
   "phone_number": int,
   "mobile_operator_code": int,
@@ -79,7 +79,7 @@ DATABASES = {
 }
 
 'http://127.0.0.1:8000/mailing/<int:pk>/update/' # Изменить данные рассылки
-# Method 'PUT' тело запроса:
+# Method 'PUT' тело запроса в ссылке указать id Рассылки которую надо изменить:
 {
   "start_datetime": "2023-05-26T00:00:00",
   "end_datetime": "2023-05-26T23:59:59",
