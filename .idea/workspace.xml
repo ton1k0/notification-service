@@ -4,7 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d84a08c2-d990-400f-8260-c615137b1e66" name="Changes" comment="" />
+    <list default="true" id="d84a08c2-d990-400f-8260-c615137b1e66" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/notification_service/celery.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/notification_service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/notification_service.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mailing/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/mailing/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mailing/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/mailing/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mailing/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/mailing/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/message/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/message/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/message/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/message/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/message/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/message/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notification_service/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/notification_service/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notification_service/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/notification_service/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -37,12 +51,12 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "D:/Projects/test for job/notification_service/env/Scripts/python.exe",
+    "last_opened_file_path": "/Users/alexandr/Documents/Projects/notification-service",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -83,6 +97,7 @@
       <workItem from="1685094412448" duration="6243000" />
       <workItem from="1685100750605" duration="1915000" />
       <workItem from="1685104317925" duration="953000" />
+      <workItem from="1685109032779" duration="8079000" />
     </task>
     <servers />
   </component>
